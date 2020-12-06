@@ -75,6 +75,7 @@
         <main class="py-4">
             @yield('content')
             @yield('alunos')
+            @yield('responsaveis')
         </main>
     </div>
 </body>

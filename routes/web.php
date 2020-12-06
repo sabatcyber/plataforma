@@ -16,5 +16,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/estados', 'HomeController@estados')->name('estados');
+Route::get('/cad_alunos', 'HomeController@cad_alunos')->name('cad_alunos');
 Route::get('/cidades/{id}', 'HomeController@cidades');
+Route::get('/responsaveis', 'HomeController@responsaveis')->name('responsaveis');

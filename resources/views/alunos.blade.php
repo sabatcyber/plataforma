@@ -2,12 +2,32 @@
 
 @section('alunos')
 
+<div>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Alunos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ route('responsaveis') }}">Responsáveis</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Turmas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Desativado</a>
+  </li>
+</ul>
+</div>
+
+<br>
   <form name="formLogin" method="POST" action="">
 
 @csrf
 
+
   <div class="form-group">
     <label for="exampleFormControlSelect1">Estados</label>
+
 
 
 @if(isset($estados))

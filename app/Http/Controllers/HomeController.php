@@ -36,7 +36,7 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function estados(){
+    public function cad_alunos(){
 
         $estados = DB::table('estados')->get(['id','estado'])->unique();
 
@@ -53,6 +53,11 @@ class HomeController extends Controller
         return response()->json($produto);
         }
 
+
+public function responsaveis(){
+
+       return view('responsaveis');
+        }
     
 
 }
